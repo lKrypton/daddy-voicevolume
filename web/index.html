@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>daddy-voicevolume</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app" class="hidden">
+        <div id="panel">
+            <div id="panel-header">
+                <div class="header-left">
+                    <span id="panel-title" data-i18n="panelTitle">Nearby</span>
+                    <span id="range-badge" class="range-badge">18m</span>
+                </div>
+                <div class="header-actions">
+                    <button id="resync-btn" type="button" data-i18n-title="resetVoiceTitle" data-i18n-aria="resetVoice" title="Reset the voice connection" aria-label="Reset voice">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                        </svg>
+                    </button>
+                    <button id="close-btn" type="button" data-i18n-aria="close" aria-label="Close">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="search-container">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="player-search" data-i18n-placeholder="searchPlaceholder" placeholder="Search by name or ID..." autocomplete="off" spellcheck="false" />
+                    <button id="search-clear-btn" type="button" class="hidden" data-i18n-aria="clearSearch" aria-label="Clear">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="panel-body">
+                <div id="player-list"></div>
+                <div id="empty-state">
+                    <div class="empty-title">Nobody around</div>
+                    <div id="empty-desc" class="empty-desc"></div>
+                </div>
+            </div>
+            <div id="resize-handle" data-i18n-title="resizeHint" title="Drag down to resize"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
