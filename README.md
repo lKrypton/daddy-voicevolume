@@ -1,11 +1,13 @@
 # Daddy Voice Volume
 
-![Daddy Voice Volume](https://raw.githubusercontent.com/lKrypton/daddy-voicevolume/main/.github/preview.png)
+![Daddy Voice Volume](https://raw.githubusercontent.com/lKrypton/daddy-voicevolume/main/.github/banner.jpg)
 
 Turn the voice of one nearby player up or down, only for yourself. Made for pma-voice.
 Someone too loud or too quiet? Press F10, pick the player and move the slider.
 
 Free and open source by Daddy Studios.
+
+![The panel](https://raw.githubusercontent.com/lKrypton/daddy-voicevolume/main/.github/preview.png)
 
 ## Features
 
