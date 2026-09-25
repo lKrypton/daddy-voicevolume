@@ -35,3 +35,20 @@ dependencies {
     'pma-voice',
     'ox_lib',
 }
+
+-- Free and open source: every file stays readable when uploaded to the Cfx portal.
+escrow_ignore {
+    'CHANGELOG.md',
+    'client/main.lua',
+    'client/voice.lua',
+    'config.lua',
+    'LICENSE',
+    'locales/en.lua',
+    'locales/tr.lua',
+    'README.md',
+    'server/main.lua',
+    'shared/locale.lua',
+    'web/app.js',
+    'web/index.html',
+    'web/style.css',
+}
